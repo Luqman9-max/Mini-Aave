@@ -11,17 +11,17 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
  * @notice A simple ERC20 stablecoin that represents borrowed debt in MiniAave
  *
  * ╔══════════════════════════════════════════════════════════════════╗
- * ║                    WHY DO WE NEED THIS FILE?                    ║
+ * ║                    WHY DO WE NEED THIS FILE?                     ║
  * ╠══════════════════════════════════════════════════════════════════╣
- * ║ In real Aave, when you borrow, you receive actual tokens        ║
- * ║ (like USDC or DAI). Our MiniUSD serves the same purpose:       ║
- * ║                                                                 ║
- * ║   1. User deposits ETH as collateral                            ║
- * ║   2. User borrows → MiniAave MINTS MUSD tokens to user         ║
- * ║   3. User repays → MiniAave BURNS the MUSD tokens              ║
- * ║                                                                 ║
- * ║ Only the MiniAave contract (the owner) can mint and burn.       ║
- * ║ This ensures no one can create fake debt or erase real debt.    ║
+ * ║ In real Aave, when you borrow, you receive actual tokens         ║
+ * ║ (like USDC or DAI). Our MiniUSD serves the same purpose:         ║
+ * ║                                                                  ║
+ * ║   1. User deposits ETH as collateral                             ║
+ * ║   2. User borrows → MiniAave MINTS MUSD tokens to user           ║
+ * ║   3. User repays → MiniAave BURNS the MUSD tokens                ║
+ * ║                                                                  ║
+ * ║ Only the MiniAave contract (the owner) can mint and burn.        ║
+ * ║ This ensures no one can create fake debt or erase real debt.     ║
  * ╚══════════════════════════════════════════════════════════════════╝
  *
  * SOLIDITY CONCEPT: Inheritance
